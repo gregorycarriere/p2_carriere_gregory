@@ -1,9 +1,71 @@
-*
-{
+html{
+    background-color: white;
+}
+
+body{
     font-family: 'Raleway', sans-serif;
    /* police appliqué à tous les éléments */ 
     box-sizing: border-box;
    /* box-sizing est appliqué à tous les éléments */
+
+    margin:0% 3%;
+    /*background-color: greenyellow;*/
 }
 
-   
+/* Position éléments général */
+.flexCentre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexAround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flexBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Couleurs liens */
+.color-lien1{
+    color: #0065FC;
+}
+
+.color-lien2{
+    color: black;
+}
+
+/* Header */
+header{
+    height: 97px;
+}
+
+#section-head{
+    height: 100%;
+}
+
+#logo{
+    margin: 1% 2%;
+    width: 6%;
+}
+
+#nav-bar{
+    width: 30%;
+    height: 100%;
+}
+
+#nav-border{
+    border-top: 3px solid #0065FC;
+    height: 100%;
+}
+
+.nav-lien{
+    text-decoration: none;
+    padding: 15px;
+}
+
