@@ -8,20 +8,62 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0b4b1e310c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header >
-        <section class="flexBetween" id="section-head">
-            <img src="images/logo/Booki.png" alt="logo-booki" id="logo">
-            <nav class="flexAround" id="nav-bar">  
-                <div id="nav-border" class="flexCentre"><a href="#" class="nav-lien color-lien1">Hébergements</a></div>
-                <div><a href="#" class="nav-lien color-lien2">Activités</a></div>
+    <header>
+        <div class="head-band" >
+            <a href="#" class="bx-logo">
+                <img src="images/logo/Booki.png" alt="logo-booki" class="logo">
+            </a>
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li class="elem-list">
+                        <a href="#" class="nav-lien">Hébergements</a>
+                    </li>
+                    <li class="elem-list">
+                        <a href="#" class="nav-lien">Activités</a>
+                    </li>
+                </ul>  
             </nav>
-        </section>
+        </div>
         <section>
-            
+            <div class="filter-title-box">
+                <h1 class="filter-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
+            <form action="" class="search-bar">
+                <i class="fa-solid fa-location-dot  search-icon"></i>
+                <input type="search" value="Marseille, France" class="search-area">
+                <button type="submit" class="search-btn"><span class="search-btn-txt">Rechercher</span><i class="fa-solid fa-magnifying-glass" id="search-btn-icon"></i></button>
+            </form>
+            <div class="filter-box">
+                <p class="space-around">Filtres</p>
+                <div class="filter-item-box">   
+                    <div class="filter-item">
+                        <i class="fa-solid fa-money-bill-wave filter-item-icon"></i>
+                        <p class="filter-item-txt">Économique</p>
+                    </div>
+                    <div class="filter-item">
+                        <i class="fa-solid fa-child-reaching fa-lg filter-item-icon" id="filter-item-icon-f"></i>
+                        <p class="filter-item-txt">Familial</p>
+                    </div>
+                    <div class="filter-item">
+                        <i class="fa-solid fa-heart filter-item-icon"></i>
+                        <p class="filter-item-txt">Romantique</p>
+                    </div>
+                    <div class="filter-item">
+                        <i class="fa-solid fa-dog  filter-item-icon"></i>
+                        <p class="filter-item-txt">Animaux autorisés</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="info-box">
+                <i class="fa-solid fa-info fa-sm info-icon"></i>
+                <p class="space-around">Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
         </section>
 
     </header>
