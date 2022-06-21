@@ -1,71 +1,306 @@
-html{
-    background-color: white;
-}
-
-body{
+*{
     font-family: 'Raleway', sans-serif;
    /* police appliqué à tous les éléments */ 
     box-sizing: border-box;
    /* box-sizing est appliqué à tous les éléments */
+    margin: 0;
+    /* Réinitialisation de la marge */
+}
 
+body{
     margin:0% 3%;
     /*background-color: greenyellow;*/
 }
 
-/* Position éléments général */
-.flexCentre{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.flexAround{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.flexBetween{
+/*                                                              Section Header                                                      */
+.head-band{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Couleurs liens */
-.color-lien1{
-    color: #0065FC;
+.bx-logo{
+    margin-right: auto;
 }
 
-.color-lien2{
-    color: black;
+.logo{
+    width: 100px;
+    margin-left: 20%;
 }
 
-/* Header */
-header{
+.nav-bar{
+    margin-left: auto;
+}
+
+.nav-list{
+    list-style: none;
+    padding: 0;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.elem-list{
     height: 97px;
-}
-
-#section-head{
-    height: 100%;
-}
-
-#logo{
-    margin: 1% 2%;
-    width: 6%;
-}
-
-#nav-bar{
-    width: 30%;
-    height: 100%;
-}
-
-#nav-border{
-    border-top: 3px solid #0065FC;
-    height: 100%;
+    display: flex;
+    justify-content:space-around;
+    width: 20%;
+    margin: 0% 20%;
 }
 
 .nav-lien{
     text-decoration: none;
-    padding: 15px;
+    color: black;
+    padding: 0% 15%;
+    border-top: 3px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.nav-lien:hover{
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+}
+
+/*                                                              Section Filter                                                      */
+
+/* Titre des filtres */
+.filter-title{
+    font-size:x-large;
+    margin : 0 0 0.5% 0;
+}
+
+/* Barre de recherche */
+.search-bar{
+    width: fit-content;
+    margin-top: 1.2%;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon{
+    background-color: #F2F2F2;
+    border-radius: 30% 0 0 30%;
+    padding: 7% 7%;
+}
+
+.search-area{
+    padding: 6% 4%;
+    border: 0;
+    font-weight: bold;
+    border: 1px solid #F2F2F2;
+}
+
+.search-btn{
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0 15px 15px 0;
+    padding: 6.2%;
+    border: 0;
+    font-weight: bold;
+}
+
+#search-btn-icon{
+    display: none;
+}
+
+.search-btn:hover{
+    cursor: pointer;
+}
+
+.search-btn:active{
+    background-color:blue;
+}
+
+/* Filtres */
+.filter-box{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 0;
+    font-weight: bold;
+    align-items: center;
+}
+
+.filter-item-box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.space-around{
+    margin: 0 0.8%;
+    
+}
+
+.filter-item{
+    margin: 10px 15px;
+    display: flex;
+    border: 2px solid #cfcdcdb6;
+    border-radius: 28px;
+    align-items: center;
+}
+
+.filter-item:hover{
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: #F2F2F2;
+    color: #0065FC;
+}
+
+.filter-item:hover .filter-item-icon{
+    background-color: #0065FC;
+    color: #DEEBFF;
+}
+
+.filter-item-icon{
+    padding: 15px;
+    margin: -2px 1px -2px -2px;
+    background-color: #DEEBFF;
+    border-radius: 25px;
+    color: #0065FC;
+}
+
+#filter-item-icon-f{
+    padding: 23px 18px;
+}
+
+.filter-item-txt{
+    padding: 0 20px 0 15px;
+}
+
+/* Info */
+.info-box{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.info-icon{
+    color:#0065FC;
+    padding: 10px;
+    border-radius: 45%;
+    border: 2px solid #F2F2F2;
+}
+
+/*                                                       Modification affichage mobile                                                   */
+@media screen and (max-width: 767px){
+ /*                                                              Section Header                                                      */   
+    .bx-logo{
+        margin: auto;
+        width: auto;
+    }
+
+    .logo{
+        width: 45%;
+        margin-top: 8%;
+        margin-left: 35%;  
+        margin-bottom: 3%;
+    }
+
+    .head-band{
+        flex-direction: column;
+        margin: 0% -4% ;
+    }
+
+    .nav-bar{
+        margin: 0;
+        padding: 0%;
+        width: 100%;
+        
+    }
+
+    .nav-list{
+        width: 100%;
+    }
+
+    .elem-list{
+        margin: auto;
+        height: auto;
+        width: 100%;
+    }
+
+    .nav-lien{
+        width: 100%;
+        padding: 7% 0%;
+        border-bottom: 3px solid #F2F2F2;
+        color: black;
+    }
+
+    .nav-lien:active{
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
+    }
+
+    .nav-lien:hover{
+        border-top: 3px solid transparent;
+    }
+
+/*                                                              Section Filter                                                      */
+    
+/* Titre des filtres */
+    .filter-title-box{
+        margin: 30px 20px;
+    }
+
+    .filter-title{
+        font-size: 130%;
+        margin-bottom: 10px;
+    }
+
+/* Barre de recherche */
+    .search-bar{
+        margin: 15px;
+    }
+
+    .search-area{
+        padding: 5.8% 7%;
+    }
+
+    .search-btn{
+        border-radius: 14px;
+        margin-left: -12px;
+        padding: 17px;
+    }
+
+    .search-btn-txt{
+        display: none;
+    }
+
+    #search-btn-icon{
+        display: block;
+    }
+
+/* Filtres */
+    .space-around{
+        margin: 18px 10px 0;
+    }
+
+    .filter-box{
+        margin-bottom: 5px;
+    }
+
+    .filter-item-box{
+        margin-top: 10px;
+    }
+
+    .filter-item{
+        margin: 6px 5px;
+    }
+
+    .filter-item-txt{
+        padding: 0 15px 0 10px;
+        font-size: 95%;
+    }
+
+/* Info */
+    .info-box{
+        font-size: 95%;
+    }
+}
+
+/*                                                       Modification affichage tablette                                                  */
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+}
