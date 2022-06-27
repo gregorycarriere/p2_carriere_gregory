@@ -7,11 +7,29 @@
     /* Réinitialisation de la marge */
 }
 
-body{
-    margin:0% 3%;
-    /*background-color: greenyellow;*/
+html{
+    justify-content: center;
+    max-width: 1441px;
+    margin: auto;
 }
 
+body{
+    margin: 0 3%;
+}
+
+/* Couleurs */
+.couleur1{
+    color: #0065FC;
+}
+
+.couleur2{
+    color: #DEEBFF;
+}
+
+.couleur3{
+    /* color: #F2F2F2; */
+    color: #cfcdcdb6;
+}
 
 /*                                                              Section Header                                                      */
 .head-band{
@@ -31,12 +49,13 @@ body{
 
 .nav-bar{
     margin-left: auto;
+    width: auto;
 }
 
 .nav-list{
     list-style: none;
     padding: 0;
-    width: auto;
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
@@ -45,7 +64,7 @@ body{
     height: 97px;
     display: flex;
     justify-content:space-around;
-    width: 20%;
+    width: 22%;
     margin: 0% 20%;
 }
 
@@ -184,9 +203,197 @@ body{
     border: 2px solid #F2F2F2;
 }
 
+/*                                                                Main                                                                    */
+.main-1st{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*                                                  Section Hébergements à Marseille                                                */
+.hbg-section{
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 2% 0% 2% 2%;
+    margin: 1.3% 2% 0 0;
+    width: 70%;
+    height: fit-content;
+}
+
+.hbg-box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+}
+
+.card-box{
+    margin: 3% 3% 2% 0 ;
+    border-radius: 15px;
+    box-shadow: 0 0 6px 1px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+}
+
+.card-box:hover{
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.4);
+}
+
+.card-link{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.card-box-img{
+    height: 60%;
+    margin: 5px;
+    border-radius: 10px 10px 0 0;
+    max-height: 112px;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+.card-box-legend{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 6%;
+}
+
+.card-title{
+    font-size: medium;
+    margin: 3% 0;
+}
+
+.price{
+    font-weight: bold;
+}
+
+.stars-box-hbg{
+    margin: 3% 0;
+    font-size: small;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.link-text{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/*                                                   Section Les Plus Populaires                                                   */
+.lpp-aside{
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 2.5% 2.5% 0 2.5%;
+    margin: 1.3% 0 0 0;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lpp-title-box{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 95%;
+    margin-bottom: 5%;
+}
+
+.lpp-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aside-card-box{
+    margin: 4% 0%;
+    border-radius: 15px;
+    box-shadow: 0 0 6px 1px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+}
+
+.aside-card-box:hover{
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.4);
+}
+
+.aside-card{
+    display: flex;
+    height: fit-content;
+    max-height: 138px;
+}
+
+.aside-card-img{
+    width: 40%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+    margin: 3px;
+}
+
+.aside-card-legend{
+    margin: 4% 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 116px;
+}
+
+.stars-box{
+    font-size: small;
+}
+
+/*                                                  Section Activités à Marseille                                                */
+.main-2nd{
+    margin: 2.5% 0;
+}
+
+.act-section{
+    display: flex;
+}
+
+
+.b-card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: burlywood;
+    margin: 1% 3% 0 0;
+}
+
+.b-card-img{
+    width: 310px;
+    height: 360px;
+    border-radius: 15px 15px 0 0;
+}
+
+.act-card-title{
+    margin: 6%;
+}
+
 /*                                                       Modification affichage mobile                                                   */
 @media screen and (max-width: 767px){
- /*                                                              Section Header                                                      */   
+
+    body{
+        margin: 0;
+    }
+ /*                                                                 Header                                                      */   
     .bx-logo{
         margin: auto;
         width: auto;
@@ -201,7 +408,6 @@ body{
 
     .head-band{
         flex-direction: column;
-        margin: 0% -4% ;
     }
 
     .nav-bar{
@@ -237,7 +443,7 @@ body{
         border-top: 3px solid transparent;
     }
 
-/*                                                              Section Filter                                                      */
+/*                                                              Section Filtres                                                      */
     
 /* Titre des filtres */
     .filter-title-box{
@@ -278,7 +484,7 @@ body{
     }
 
     .filter-box{
-        margin-bottom: 5px;
+        margin: 0 10px;
     }
 
     .filter-item-box{
@@ -297,10 +503,151 @@ body{
 /* Info */
     .info-box{
         font-size: 95%;
+        margin: 0 15px;
     }
+
+/*                                                                          Main                                                                      */
+
+/*                                                              Section Les Plus Populaires                                                      */
+
+    .main-1st{
+        flex-direction: column-reverse;
+    }
+
+    .lpp-aside{
+        border-radius: 0;
+        width: 100%;
+        margin: 8% 0;
+        padding: 10% 5%;
+    }
+
+    .lpp-title-box{
+        margin-bottom: 4%;
+    }
+
+    .lpp-box{
+        margin-top: 2%;
+    }
+
+    .aside-card-box{
+        margin: 3% 0 0 0;
+        height: fit-content;
+    }
+
+    .aside-card{
+        max-height: 100%;
+    }
+
+    .card-title{
+        margin: 0;
+    }
+
+    .aside-card-img{
+        margin: 4px;
+        height: 135px;
+    }
+
+    .aside-card-legend{
+        margin-left: 4%;
+        font-size: medium;
+    }
+
+    .p-margin{
+        margin-top: 2%;
+        font-size: 90%;
+    }
+
+    .stars-box{
+        font-size: 70%;
+        margin-top: 20%;
+    }
+
+/*                                                           Section Hébergements à Marseille                                                     */
+
+    .hbg-section{
+        background-color: white;
+        border-radius: 0;
+        width: 100%;
+        padding: 0 5%;
+        margin: 2% 0;
+    }
+
+    .section-title{
+        margin-right: 10%;
+        font-size: 140%;
+    }
+
+    .hbg-box{
+        margin: 3% 0 7% 0;
+    }
+
+    .card-link{
+        height: fit-content;
+    }
+
+    .card-box{
+        max-width: 100%;
+        max-height: fit-content;
+        margin: 2% 0;
+    }
+
+    .card-box-img{
+        max-height: 120px;
+    }
+
+    .card-img{
+        object-fit: cover;
+    }
+
+    .stars-box-hbg{
+        font-size: 70%;
+        padding: 0;
+        margin: 2% 0;
+    }
+
+    .link-text{
+        font-size:large;
+    }
+
 }
 
 /*                                                       Modification affichage tablette                                                  */
 @media screen and (min-width: 768px) and (max-width: 991px){
 
+/*                                                                      Main                                                            */
+    main{
+        margin: 0 -3%;
+    }
+
+/*                                                          Section Les Plus Populaires                                                */
+    .main-1st{
+        flex-direction: column-reverse;
+    }
+
+    .lpp-aside{
+        width: 100%;
+        margin-top: 3%;
+        padding: 1.5%;
+        border-radius: 0;
+    }
+
+    .lpp-title-box{
+        margin-bottom: 1%;
+    }
+
+    .lpp-box{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .aside-card-box{
+        width: auto;
+        margin: 2% 1%;
+    }
+
+/*                                                         Section Hébergements à Marseille                                            */
+    .hbg-section{
+        background-color: white;
+        width: 100%;
+    }
 }
