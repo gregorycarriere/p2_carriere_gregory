@@ -11,6 +11,7 @@ html{
     justify-content: center;
     max-width: 1441px;
     margin: auto;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -209,12 +210,15 @@ body{
     flex-direction: row;
 }
 
+.section-title{
+    font-size: 140%;
+}
 
 /*                                                  Section Hébergements à Marseille                                                */
 .hbg-section{
     background-color: #F2F2F2;
     border-radius: 15px;
-    padding: 2% 0% 2% 2%;
+    padding: 2.5% 0% 2% 2.5%;
     margin: 1.3% 2% 0 0;
     width: 70%;
     height: fit-content;
@@ -335,8 +339,7 @@ body{
 
 .aside-card{
     display: flex;
-    height: fit-content;
-    max-height: 138px;
+    max-height: 145px;
 }
 
 .aside-card-img{
@@ -347,44 +350,119 @@ body{
 }
 
 .aside-card-legend{
-    margin: 4% 3%;
+    margin: 3%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 60%;
-    height: 116px;
+    height: 130px;
 }
 
 .stars-box{
+    margin-bottom: 5px;
     font-size: small;
 }
 
 /*                                                  Section Activités à Marseille                                                */
 .main-2nd{
-    margin: 2.5% 0;
+    margin: 4% 0;
 }
 
 .act-section{
     display: flex;
+    margin-top: 2%;
+    height: 480px;
+    margin-right: -3%;
 }
 
+.act-card-title{
+    height: 40px;
+    margin: 15px 0 0 15px;
+    font-size: 100%;
+}
 
 .b-card{
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    background-color: burlywood;
-    margin: 1% 3% 0 0;
+    width: 22%;
+    box-shadow: 0 0 6px 1px rgba(0,0,0,0.2);
 }
 
 .b-card-img{
-    width: 310px;
-    height: 360px;
+    height: 95%;
     border-radius: 15px 15px 0 0;
+    object-fit: cover;
 }
 
-.act-card-title{
-    margin: 6%;
+.act-panel{
+    width: 22%;
+    height: auto;
+    margin: 0 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+
+.m-card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    height: 50%;
+    box-shadow: 0 0 6px 1px rgba(0,0,0,0.2);
+}
+
+.m-card-img{
+    height:80%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+.s-card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    height: 40%;
+    box-shadow: 0 0 6px 1px rgba(0,0,0,0.2);
+}
+
+.s-card-img{
+    height: 80%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+.b-card:hover, .m-card:hover, .s-card:hover{
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.4);
+}
+
+/*                                                                 Footer                                                      */
+
+footer{
+    background-color: #F2F2F2;
+    height: 210px;
+    margin: 0 -3%;
+    display: flex;
+}
+
+.footer-box{
+    width: 29%;
+    margin: 3% 0 0 3%;
+}
+
+.footer-title{
+    font-size: 120%;
+}
+
+.footer-list{
+    list-style: none;
+    padding: 0;
+    font-size: large;
+    margin: 5% 0;
+}
+
+.footer-list-item{
+    margin-bottom: 2.3%;
 }
 
 /*                                                       Modification affichage mobile                                                   */
@@ -466,7 +544,7 @@ body{
 
     .search-btn{
         border-radius: 14px;
-        margin-left: -12px;
+        margin-left: -15px;
         padding: 17px;
     }
 
@@ -535,7 +613,7 @@ body{
     }
 
     .aside-card{
-        max-height: 100%;
+        max-height: 142px;
     }
 
     .card-title{
@@ -545,6 +623,7 @@ body{
     .aside-card-img{
         margin: 4px;
         height: 135px;
+        max-width: 122px;
     }
 
     .aside-card-legend{
@@ -559,7 +638,7 @@ body{
 
     .stars-box{
         font-size: 70%;
-        margin-top: 20%;
+        margin-bottom: 5%;
     }
 
 /*                                                           Section Hébergements à Marseille                                                     */
@@ -609,6 +688,83 @@ body{
         font-size:large;
     }
 
+
+/*                                                          Section Activités à Marseille                                              */
+    .main-2nd{
+        margin: 12% 5%;
+    }
+
+    .act-section{
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        font-weight:bolder;
+        margin-top: 8%;
+    }
+
+    .act-card-title{
+        height: 20%;
+        margin: 15px 0 0 15px;
+    }
+
+    .b-card{
+        width: auto;
+        height: 190px;
+    }
+
+    .b-card-img{
+        height: 72%;
+    }
+
+    .act-panel{
+        width: 100%;
+        margin: 3.5% 0;
+        height: fit-content;
+    }
+
+    .m-card{
+        height: 190px;
+        margin: 3.5% 0;
+    }
+
+    .m-card-img{
+        height: 72%;
+    }
+
+    .s-card{
+        height: 190px;
+        margin: 3.5% 0;
+    }
+
+    .s-card-img{
+        height: 72%;
+    }
+
+
+/*                                                                 Footer                                                      */
+    footer{
+        flex-direction: column;
+        height: fit-content;
+        padding-top: 12%;
+        padding-bottom: 2%;
+        margin: -6% 0 0 0;
+    }
+
+    .footer-box{
+        width: fit-content;
+        margin:0 10% 8% 8%;
+
+    }
+
+    .footer-title{
+        font-size: larger;
+        margin-bottom: 20px;
+    }
+
+    .footer-list-item{
+        font-size: medium;
+        margin: 0 0 12px 0;
+    }
 }
 
 /*                                                       Modification affichage tablette                                                  */
@@ -649,5 +805,55 @@ body{
     .hbg-section{
         background-color: white;
         width: 100%;
+    }
+
+/*                                                          Section Activités à Marseille                                              */
+    .main-2nd{
+        margin: 1% 0;
+        padding: 2% 2.5%;
+    }
+
+    .act-section{
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .b-card{
+        width: auto;
+        height: 250px;
+    }
+
+    .b-card-img{
+        height: 200px;
+    }
+
+    .act-panel{
+        width: 100%;
+        margin:1% 0;
+    }
+
+    .m-card{
+        height: 250px;
+        margin: 1% 0;
+    }
+
+    .s-card{
+        height: 250px;
+        margin: 1% 0;
+    }
+
+/*                                                                 Footer                                                      */
+
+    .footer-box{
+        width: 33%;
+    }
+
+    .footer-title{
+        margin-bottom: 8%;
+    }
+
+    .footer-list-item{
+        margin: 5% 0;
     }
 }
