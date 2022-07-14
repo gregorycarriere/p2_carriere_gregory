@@ -183,7 +183,7 @@ body{
 }
 
 #filter-item-icon-f{
-    padding: 23px 18px;
+    padding: 23px 16.5px;
 }
 
 .filter-item-txt{
@@ -535,11 +535,11 @@ footer{
 
 /* Barre de recherche */
     .search-bar{
-        margin: 15px;
+        margin: 4% 6.5%;
     }
 
     .search-area{
-        padding: 5.8% 7%;
+        padding: 5.8% 6%;
     }
 
     .search-btn{
@@ -847,6 +847,7 @@ footer{
 
     .footer-box{
         width: 33%;
+        font-size: medium;
     }
 
     .footer-title{
@@ -855,5 +856,6 @@ footer{
 
     .footer-list-item{
         margin: 5% 0;
+        font-size: medium;
     }
 }
